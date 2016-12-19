@@ -6,6 +6,7 @@
 		<link href="./../agn3/fonts/Mona Shark.otf" rel="stylesheet">
 		<link href="./../agn3/fonts/Admiration Pains.ttf" rel="stylesheet">
 		<link rel="icon" href="./../agn4/images/bclub.ico">
+		<script src="./../agn3/jquery-3.1.1.js"></script>
 		<style type="text/css">
 			html,body { 
 			  background: url('./../agn3/images/back3.jpg') no-repeat center center fixed; 
@@ -14,7 +15,19 @@
 			  -o-background-size: cover;
 			  background-size: cover;
 			}
+			.parallax {
+			    /* The image used */
+			    background-image: url('./../agn3/images/par.jpg');
 
+			    /* Full height */
+			    height: 50%; 
+
+			    /* Create the parallax scrolling effect */
+			    background-attachment: fixed;
+			    background-position: center;
+			    background-repeat: no-repeat;
+			    background-size:cover;
+			}
 
 			.heading{
 				font-family: "Mona Shark";
@@ -28,6 +41,15 @@
 			
 
 		</style>
+		<script >
+
+				$(document).ready(function(){
+   					$(".profilePic").hover(function(){
+     		    		var div = $(".ace");  
+        					div.animate({fontSize: '3em'}, "slow");
+ 			   });
+			});
+		</script> 
 	</head>
 	<body>
 		<!-- Heading -->
@@ -45,13 +67,13 @@
 			</figure>
  		</div>
  		
- 		<p class="list">
- 		<ol >
- 			<font size="25px" style="font-family:'Courier New'" color="green">
-			<li> Qualified for InPhO </li>
-			<li> Qualified for InCho </li>
-			<li> Qualified for KVPY Stage 2 </li>
-			</font>
-		</ol>
-		</p>		
+ 		<div style="font-family: monospace; font-weight: 500px"; color="red">
+ 		
+ 		<div class="ace" ><center><b><u>Achievements</u></b><br>
+ 		NSEP<br>NSEC<br>KVPY Stage1</center>
+ 		</div>
+</body>
+</html>		
+			
+		
 	
